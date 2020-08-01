@@ -1,0 +1,55 @@
+
+.index-page.root {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.index-page .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.index-page .content {
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.index-page .avatar {
+  height: 8vh;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 8vh;
+  margin: 0 0.2em
+}
+
+.index-page .avatar img {
+  width: 100%;
+}
+
+.index-page .links {
+  list-style: none;
+  display: inline-flex;
+}
+
+@media (max-width: 640px) {
+  .index-page .links {
+    display: block;
+  }
+}
+
+.index-page .links li {
+  padding: 0 0.4em;
+}
+
+@media (max-width: 640px) {
+  .index-page .links li {
+    padding: 0.4em;
+  }
+}
+
+.index-page .links a,
+.index-page .links a:visited .links a:hover {
+  color: #DDDDDD;
+}
